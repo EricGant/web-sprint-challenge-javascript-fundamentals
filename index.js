@@ -239,8 +239,8 @@ class CubeMaker extends CuboidMaker{
   constructor(attrs){
     super(attrs)
   } 
-  surfaceArea(){
-    return 6 * (this.length**2)
+  surfaceArea(){ 
+    return 6 * (this.length**2) 
   }
   volume(){
     return this.length**3
@@ -256,7 +256,7 @@ const cubes = new CubeMaker({
 cubes.volume
 cubes.surfaceArea
 console.log('stretch',cubes.volume())
-console.log('stretch',cubes.surfaceArea())
+console.log('stretch 2',cubes.surfaceArea())
   
 
 

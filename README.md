@@ -45,7 +45,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 4. Describe the four principles of the 'this' keyword.
 
-    Window Binding -- If no other rules apply, this defaults to the entire window. Basically an error and should not be used. If in node it will return the global object, or if in strict mode it will return undefined.
+    Window Binding // Global Binding-- If no other rules apply, this defaults to the entire window. Basically an error and should not be used. If in node it will return the global object, or if in strict mode it will return undefined.
 
     Implicit Binding -- When you invoke the function, this refers to what is left of the dot. This is the most common use of the 'this' keyword. It applies to objects with methods (object functions)
 
