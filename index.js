@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-//A closure is happening because they nestedFunction is reaching into its parent function myFunction to use the variable internal. The variable is defined outside of the nestedFunction therefore closure is used to grab the variable. the variable is available in the myFunction scope 
+//Defining an inner function within a parent function is called a closure. A closure is happening because the nestedFunction is inside the parent function myFunction. The variable internal is defined outside of the nestedFunction therefore closure is used to grab the variable. the variable infernal is not in the local scope of the nested function, so it looks into its outer scope to grab the variable
 
 
 
@@ -30,7 +30,7 @@ myFunction();
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
 function summation(n) {
-  var total = 0
+  let total = 0
   for (let i = 0; i <= n; i++){
     total += i
   }
