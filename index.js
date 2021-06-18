@@ -35,7 +35,7 @@ function summation(n) {
     total += i
   }
   return total;
- }
+  }
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
@@ -52,7 +52,7 @@ const zooAnimals = [
     { animal_name: "Pampa gray fox", population: 10, scientific_name: "Pseudalopex gymnocercus", state: "Connecticut" },
     { animal_name: "Hawk-eagle, crowned", population: 10, scientific_name: "Spizaetus coronatus", state: "Florida" },
     { animal_name: "Australian pelican", population: 5, scientific_name: "Pelecanus conspicillatus", state: "West Virginia" },
-  ];
+];
   
   /* 🦁🦁🦁 Request 1: .forEach() 🦁🦁🦁
   The zoos want to display both the scientific name and the animal name in front of the habitats. 
@@ -96,8 +96,7 @@ const zooAnimals = [
 
   function USApop(arr){
     const newA = arr.reduce((acc, item) => {
-    return acc + item.population
-    },0)
+    return acc + item.population},0)
     return newA
   }
   
@@ -116,23 +115,17 @@ const zooAnimals = [
  
   
   /* 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁 */
- // 🦁🦁🦁 Use add to return the sum of two numbers 🦁🦁🦁
+  // 🦁🦁🦁 Use add to return the sum of two numbers 🦁🦁🦁
   
- function add(a, b){
-  return a + b
-}
+  let add = (a, b) => a + b 
 
-// 🦁🦁🦁 Use multiply to return the product of two numbers 🦁🦁🦁
+  // 🦁🦁🦁 Use multiply to return the product of two numbers 🦁🦁🦁
   
-function multiply(a, b){
-  return a * b
- }
+  let multiply = (a, b) => a * b
 
- // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
+  // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
   
-function greeting(a, b){
-   return `Hello ${a} ${b}, nice to meet you!`
-}
+  let greeting = (a, b) => `Hello ${a} ${b}, nice to meet you!`
   
   // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
   // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
@@ -141,12 +134,20 @@ function greeting(a, b){
   console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
   
   
-// 🦁💪 Stretch: If you haven't already, convert your array method callbacks into arrow functions - make sure you comment out this section before you submit your work 🦁💪
- 
-// let add = (a, b) => a + b
-// let multiply = (a, b) => a * b
-// let greeting = (a, b) => `Hello ${a} ${b}, nice to meet you!`
+  // 🦁💪 Stretch: If you haven't already, convert your array method callbacks into arrow functions - make sure you comment out this section before you submit your work 🦁💪
+  // Already made them as arrow functions, here's the normal functions::
 
+  // function add(a, b){
+  //   return a + b
+  // }
+
+  // function multiply(a, b){
+  //   return a * b
+  // }
+
+  // function greeting(a, b){
+  //   return `Hello ${a} ${b}, nice to meet you!`
+  // }
 
 // 🐴🐴🐴 Topic 3: Prototypes 🐴🐴🐴 //
 //🐴🐴🐴 Task: You are to build a cuboid maker that can return values for a cuboid's volume or surface area. Cuboids are similar to cubes but do not have even sides. Follow the steps in order to accomplish this challenge. 🐴🐴🐴
