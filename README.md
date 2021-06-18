@@ -28,18 +28,34 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
-.forEach will iterate through the entire array without stopping, it also won't automatically create a new array. Return is optional
-.map returns a new array automatically without manipulating the original array. it needs the return keyword.
+
+    .forEach will iterate through the entire array without stopping, it also won't automatically create a new array. Return is optional
+    .map returns a new array automatically without manipulating the original array. it needs the return keyword.
 
 
 2. Explain the difference between a callback and a higher order function.
-Callback functions are passed into higher order functions as arguments.
+
+    Callback functions are passed into higher order functions as arguments. Higher order functions receive callback functions.
 
 3. Can you explain what a closure is and how you used it in the counter function? 
 
+    A closure is used when a function reaches into the outer scope to grab a value. You can pass values down in scope but never back up.
+    I used closure in the counter function to define the variable 'total' outside of the for loop, and then the for loop is using the variable total to run its loop, which will add every number from 0 to the total.
+
+
 4. Describe the four principles of the 'this' keyword.
 
+    Window Binding -- If no other rules apply, this defaults to the entire window. Basically an error and should not be used. If in node it will return the global object, or if in strict mode it will return undefined.
+
+    Implicit Binding -- When you invoke the function, this refers to what is left of the dot. This is the most common use of the 'this' keyword. It applies to objects with methods (object functions)
+
+    Explicit Binding -- You are explicity defining what this will reference... (.call, .bind, .apply) example -- data.call(newdata) -- in this example, this is being bound to newdata
+
+    New Binding -- using 'new' keyword will make a new object out of a constructor function, when a function is invoked as a constructor function, this points to the new object
+
 5. Why do we need super() in an extended class?
+    super() does what .call and object.create do, they inherit  methods and attributes from the parent class. 
+    extends tells super() what to super to. in the following example -- class Parent extends Child -- super will grab whats in Parent.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
